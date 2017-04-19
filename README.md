@@ -1,2 +1,2 @@
 # Solutions
-This program is about creating sinly linked list in c#
+This folder is having programs of data structures and their implementation.
