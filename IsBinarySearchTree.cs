@@ -31,15 +31,15 @@ public static bool isBST(Node root, int min , int max)
         return isLeft && isRight;
         //return (isBST(root.left,min,(int)root.data-1) && isBST(root.right,(int)root.data-2,max));
     }
+public static Node prev = null;
 public static bool isBST1(Node root)
 {
-    Node prev = null;
     if(root!=null)
     {
         if (!isBST1(root.right))
             return false;
 
-        if (prev!=null && (int)root.data <= (int)prev.data)
+        if (prev!=null && (int)root.data >= (int)prev.data)
             return false;
         prev = root;
         root = root.left;
