@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Algo
 {
     public delegate void DelSumOfNumbers(int target);
-    class MostRepeatedElementInArray
+    class DelegateExample
     {
 
         
